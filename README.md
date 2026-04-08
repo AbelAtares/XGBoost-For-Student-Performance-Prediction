@@ -1,54 +1,35 @@
-🎓 XGBoost for Student Performance Prediction
+# 🎓 XGBoost for Student Performance Prediction
 
-This project focuses on predicting student academic performance using behavioral data and machine learning techniques. We implement and evaluate an XGBoost model to understand how different factors influence student outcomes and to assess the predictive power of data-driven approaches.
+This project focuses on predicting student academic performance using behavioral data and machine learning techniques. The goal is to apply the XGBoost algorithm to uncover patterns in student behavior and evaluate how well these factors can predict academic outcomes.
 
-📥 1. Import and Study Data
+---
 
-In this section, we:
+## 📥 Import and Study Data
 
-Load the dataset from Kaggle
-Merge the two available tables into a single dataset
-Explore the data by checking its dimensions
-Handle missing values by removing empty entries
+In this section, we load the dataset from Kaggle and perform initial data exploration. The two available tables are merged into a single dataset, after which we inspect the dimensions to better understand its structure. Finally, we clean the data by removing missing or empty values to ensure consistency and reliability for the modeling phase.
 
-This step ensures that the dataset is clean, consistent, and ready for modeling.
+---
 
-🔀 2. Data Split
+## 🔀 Data Split
 
-Here, we:
+Here, we prepare the data for training and testing. The dataset is divided into input features (X) and the target variable (y). Then, we split the data into training (**train_data**) and testing (**test_data**) sets, allowing us to evaluate model performance on unseen data.
 
-Separate the dataset into features (X) and target variable (y)
-Split the data into training (train_data) and testing (test_data) sets
+---
 
-This allows us to train the model on one portion of the data and evaluate its performance on unseen data.
+## 🤖 Model Development
 
-🤖 3. Model Development
+In this stage, we build the predictive model using **scikit-learn** and **XGBoost**. The model is trained by tuning key hyperparameters such as the number of estimators (`n_estimators`), learning rate (`learning_rate`), and tree depth (`max_depth`). This process helps optimize performance and improve prediction accuracy.
 
-In this section, we:
+---
 
-Use scikit-learn and XGBoost libraries
-Build and train the model using key hyperparameters such as:
-n_estimators
-learning_rate
-max_depth
+## 📊 Model Evaluation
 
-We experiment with these parameters to improve model performance and achieve better predictions.
+To assess the performance of the model, we compute several evaluation metrics, including **Mean Squared Error (MSE)**, **R (correlation coefficient)**, and **Accuracy**. These metrics provide insights into how well the model predicts student performance and how closely predictions match actual values.
 
-📊 4. Model Evaluation
+---
 
-To evaluate the model, we compute:
+## 📈 Data Visualization
 
-Mean Squared Error (MSE) 📉
-R (correlation coefficient) 📈
-Accuracy ✅
+Finally, we visualize the results to better interpret the model. We generate a table showing the importance of each feature, highlighting the most influential variables. Additionally, we create a plot comparing real values versus predicted values to visually assess model performance.
 
-These metrics help us understand how well the model performs and how close the predictions are to the actual values.
-
-📈 5. Data Visualization
-
-Finally, we visualize the results by:
-
-Displaying a table with feature importance 🧠
-Plotting a graph comparing real vs predicted values 📊
-
-These visualizations provide insights into which variables are most influential and how accurate the model predictions are.
+---
