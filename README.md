@@ -1,34 +1,34 @@
-# 🎓 XGBoost for Student Performance Prediction
+# XGBoost for Student Performance Prediction
 
 This project focuses on predicting student academic performance using behavioral data and machine learning techniques. The goal is to apply the XGBoost algorithm to uncover patterns in student behavior and evaluate how well these factors can predict academic outcomes.
 
 ---
 
-## 📥 Import and Study Data
+## 1. Import and Study Data
 
 In this section, we load the dataset from Kaggle and perform initial data exploration. The two available tables are merged into a single dataset, after which we inspect the dimensions to better understand its structure. Finally, we clean the data by removing missing or empty values to ensure consistency and reliability for the modeling phase.
 
 ---
 
-## 🔀 Data Split
+## 2. Data Split
 
 Here, we prepare the data for training and testing. The dataset is divided into input features (X) and the target variable (y). Then, we split the data into training (**train_data**) and testing (**test_data**) sets, allowing us to evaluate model performance on unseen data.
 
 ---
 
-## 🤖 Model Development
+## 3. Model Development
 
 In this stage, we build the predictive model using **scikit-learn** and **XGBoost**. The model is trained by tuning key hyperparameters such as the number of estimators (`n_estimators`), learning rate (`learning_rate`), and tree depth (`max_depth`). This process helps optimize performance and improve prediction accuracy.
 
 ---
 
-## 📊 Model Evaluation
+## 4. Model Evaluation
 
 To assess the performance of the model, we compute several evaluation metrics, including **Mean Squared Error (MSE)**, **R (correlation coefficient)**, and **Accuracy**. These metrics provide insights into how well the model predicts student performance and how closely predictions match actual values.
 
 ---
 
-## 📈 Data Visualization
+## 5. Data Visualization
 
 Finally, we visualize the results to better interpret the model. We generate a table showing the importance of each feature, highlighting the most influential variables. Additionally, we create a plot comparing real values versus predicted values to visually assess model performance.
 
