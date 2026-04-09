@@ -24,7 +24,7 @@ In this stage, we build the predictive model using **scikit-learn** and **XGBoos
 
 ## 4. Model Evaluation
 
-To assess the performance of the model, we compute several evaluation metrics, including Mean Squared Error (MSE), R (correlation coefficient), and Accuracy. The model achieved an R² score of **0.93**, indicating a strong ability to explain the variance in student performance. These metrics provide insights into how well the model predicts student performance and how closely predictions match actual values.
+To assess the performance of the model, we compute several evaluation metrics, including Mean Squared Error (MSE), R (correlation coefficient), and Accuracy. The model achieved an R² score of **~0.93**, indicating a strong ability to explain the variance in student performance. These metrics provide insights into how well the model predicts student performance and how closely predictions match actual values.
 
 ---
 
